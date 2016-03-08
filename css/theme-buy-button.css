@@ -1,0 +1,86 @@
+/**
+* Theme Buy Button
+*
+* @package     Theme Buy Button
+* @subpackage  CSS
+* @copyright   Copyright (c) 2016, Rich Tabor
+* @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
+*/
+
+#theme-buy-button--wrapper {
+    bottom: 0;
+    padding: 30px;
+    position: fixed;
+    right: 0;
+    z-index: 99999;	
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: 300ms transform cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: 300ms transform cubic-bezier(0.645, 0.045, 0.355, 1);	
+}
+
+#theme-buy-button--wrapper.js--visible {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.theme-buy-button,
+.theme-buy-button:hover,
+.theme-buy-button:focus {
+    display: inline-block;
+    background: #008ec2;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    background-image: none;
+    text-decoration: none;
+    padding: 0 1.5pc;
+    box-shadow: 0 7px 30px rgba(14,21,47,0.3);
+    width: auto;
+    -webkit-transition: 200ms background-color cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: 200ms background-color cubic-bezier(0.645, 0.045, 0.355, 1);	
+}
+
+.theme-buy-button:hover {
+    background: #0AA2DA;
+    color: #fff !important;
+}
+
+.theme-buy-button--price {
+    background-color: rgba(0,0,0,.15);
+    padding: 4px 9px;
+    border-radius: 2px;
+    margin-left: 7px;
+}
+
+.theme-buy-button--price abbr[title] {
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+    top: -4px;
+    border-bottom: none;
+    left: -2px;
+}
+
+
+@media screen and (max-width: 514px) {
+    #theme-buy-button--wrapper {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .theme-buy-button,
+    .theme-buy-button:hover,
+    .theme-buy-button:focus {
+        width: 100%;
+    }
+}
